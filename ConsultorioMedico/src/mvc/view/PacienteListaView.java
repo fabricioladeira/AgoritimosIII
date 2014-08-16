@@ -32,6 +32,18 @@ public class PacienteListaView {
 		 
 		 frame.add(btnIncluir);
 		
+		 Object rowData[][] = { 
+								 { "Row1-Column1", "Row1-Column2"},
+								 { "Row2-Column1", "Row2-Column2" } 
+				 };
+		 
+		 //Object array = value.toArray(new Paciente[value.size()]);
+		 
+		 Object columnNames[] = { "Nome", "Telefone"};
+		 JTable table = new JTable(rowData, columnNames);
+		
+		 frame.add(table);
+		 
 		/*
 		for (Paciente paciente : value) {
 			out.println(paciente.getNome() + "  Telefone: " + paciente.getTelefone());
